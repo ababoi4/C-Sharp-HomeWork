@@ -1,4 +1,4 @@
-﻿// Задача № 1 
+﻿// Задача № 1 Принимает 2 числа и выводит сначала большее, а потом меньшее
 
 int Prompt(string message)
 {
@@ -7,15 +7,13 @@ int Prompt(string message)
     int result = int.Parse(readVelue);
     return result;
 }
-var value = Prompt("Введите число >");
+var value = Prompt("Введите первое число >");
 var valueNew = Prompt("Введите второе число >");
 if (value > valueNew)
 {
-    System.Console.WriteLine(value);
-    System.Console.WriteLine(valueNew);
+    Console.WriteLine("max = " + value + " min = " + valueNew);
 }
 else
 {
-    System.Console.WriteLine(valueNew);
-    System.Console.WriteLine(value);
+    Console.WriteLine("max = " + valueNew + " min = " + value);
 };
