@@ -7,8 +7,8 @@ int Prompt(string message)
     int result = int.Parse(readVelue);
     return result;
 }
-var value = Prompt("Введите первое число >");
-var valueNew = Prompt("Введите второе число >");
+int value = Prompt("Введите первое число ->");
+int valueNew = Prompt("Введите второе число ->");
 if (value > valueNew)
 {
     Console.WriteLine("max = " + value + " min = " + valueNew);
